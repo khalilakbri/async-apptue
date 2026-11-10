@@ -18,6 +18,10 @@ app.get("/readlogs",async(req,res)=>{
     res.json(logs)
 })
 
+app.get("/login",(req,res)=>{
+    res.json("Welcome to login page")
+})
+
 app.get("/add/:x/:y",async(req,res)=>{
     const x = Number(req.params.x)
     const y = Number(req.params.y)
